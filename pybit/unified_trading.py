@@ -1,5 +1,5 @@
 from dataclasses import dataclass
-from pybit.exceptions import (
+from .exceptions import (
     InvalidChannelTypeError,
     TopicMismatchError,
     UnauthorizedExceptionError,
