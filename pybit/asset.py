@@ -4,7 +4,7 @@ from enum import Enum
 class Asset(str, Enum):
     GET_COIN_EXCHANGE_RECORDS = "/v5/asset/exchange/order-record"
     GET_OPTION_DELIVERY_RECORD = "/v5/asset/delivery-record"
-    GET_USDC_CONTRACT_SETTLEMENT = "/v5/asset/settlement-record"
+    GET_USDC_PERPETUAL_SETTLEMENT = "/v5/asset/settlement-record"
     GET_SPOT_ASSET_INFO = "/v5/asset/transfer/query-asset-info"
     GET_ALL_COINS_BALANCE = "/v5/asset/transfer/query-account-coins-balance"
     GET_SINGLE_COIN_BALANCE = "/v5/asset/transfer/query-account-coin-balance"
@@ -20,17 +20,14 @@ class Asset(str, Enum):
         "/v5/asset/transfer/query-universal-transfer-list"
     )
     GET_ALLOWED_DEPOSIT_COIN_INFO = "/v5/asset/deposit/query-allowed-list"
-    SET_DEPOSIT_ACCOUNT = "/v5/asset/deposit/deposit-to-account"
-    GET_DEPOSIT_RECORDS = "/v5/asset/deposit/query-record"
+    GET_DEPOSIT_RECORD = "/v5/asset/deposit/query-record"
     GET_SUB_ACCOUNT_DEPOSIT_RECORDS = (
         "/v5/asset/deposit/query-sub-member-record"
     )
-    GET_INTERNAL_DEPOSIT_RECORDS = "/v5/asset/deposit/query-internal-record"
     GET_MASTER_DEPOSIT_ADDRESS = "/v5/asset/deposit/query-address"
     GET_SUB_DEPOSIT_ADDRESS = "/v5/asset/deposit/query-sub-member-address"
     GET_COIN_INFO = "/v5/asset/coin/query-info"
     GET_WITHDRAWAL_RECORDS = "/v5/asset/withdraw/query-record"
-    GET_WITHDRAWABLE_AMOUNT = "/v5/asset/withdraw/withdrawable-amount"
     WITHDRAW = "/v5/asset/withdraw/create"
     CANCEL_WITHDRAWAL = "/v5/asset/withdraw/cancel"
 
